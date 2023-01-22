@@ -1,0 +1,138 @@
+/* Здесь у нас хранятся только переменные!! */
+
+$white: #fff;
+$black: #000;
+$bg: #f1f1f1;
+$gray: #b8b8b8;
+$middle-gray: #dddfe1;
+$gray-background: rgba(184, 184, 184, 0.1);
+$whitesmoke: #93a1a8;
+$darkgray: #8c969d;
+$bluegray: #596e81;
+$dark: #39444f;
+$primary: #478cc8;
+$primary-hover: #3a7bbf;
+$primary-pressed: #3167b5;
+$primary-background: rgba(58, 123, 191, 0.1);
+$blue-light: #e8f4ff;
+$blue-highlight-text: rgba(71, 140, 200, 0.2);
+$link-water: #d8e4f2;
+$hawkes-blue: #dbecfb;
+
+$orange: #e6ba4d;
+$orange-light: #fff8e7;
+$orange-hover: #dba92e;
+$orange-pressed: #d09f23;
+$salomie: #ffe093;
+$orange-new-feature: #ffecc0;
+$orange-prevalid: #dea00a;
+
+$green: #64b82a;
+$green-opacity: #c6dfb5;
+$green-hover: #55a120;
+$green-pressed: #008000;
+$green-disabled: #a1d381;
+
+$lime: #cee57c;
+$red: #d0021b;
+$pink: #ffd6dd;
+$silver: #ccc;
+
+$solitude: #e8f4ff;
+$solitude-opacity-tone9: rgba(232, 244, 255, 0.9);
+
+$color-feta: #f1fbe4;
+$color-silver-sand: #c3c6c9;
+
+$color-lightgray: #667078;
+
+$color-icongray: #949a9f;
+$color-bombay: #aeb3b7;
+$color-iron: #dce0e3;
+$color-really-dark-gray: #344b5d;
+$black-pearl: #061523;
+$primary-bayoux: #586e81;
+$color-concrete: #f2f2f2;
+$color-emperor: #535353;
+$gray-silver: #888;
+$gray-notification-borders: #d9dde1;
+$color-arsenic: rgba(48, 60, 71, 0.5);
+
+$primary-opacity: rgba(71, 140, 200, 0.16);
+$primary-opacity-tone3: rgba(71, 140, 200, 0.3);
+
+$color-steel-blue: #3e7db3;
+$color-mariner: #3279c1;
+
+$color-yellow-green: #c5dc77;
+$color-rice-flower: #f1ffe8;
+$cream-can: #f3cd6f;
+
+$lime: #cee57c;
+
+$color-bright-green: #89c146;
+$monza: #d0011b;
+
+$color-disabled: #ccc;
+
+$color-error-bg: #fff0f2;
+$color-error: #d0021b;
+
+$color-tip-background: rgba(29, 47, 62, 0.8);
+
+$color-input-border: #ccc;
+$dark-opacity: rgba(57, 68, 79, 0.1);
+$dark-overlay: rgba(6, 21, 35, 0.8);
+$dark-shadow: rgba(0, 0, 0, 0.21);
+
+$color-button-disabled: #dfdfdf;
+
+$color-filter-background: #e5e5e5;
+
+$color-contact-text: #535353;
+$color-contact-row-title: #969696;
+$color-border-orange: #dea10a;
+
+$footer-bg: #b9bfc3;
+$footer-text: #d9dde1;
+$footer-link-text: #eaedf0;
+
+$color-input-background: #e7f0f8;
+$link-water: #e7f0f8;
+
+$color-blue-opacity-tone1: rgba(71, 140, 200, 0.1);
+$color-blue-opacity-tone15: rgba(71, 140, 200, 0.15);
+$color-blue-opacity-tone2: rgba(71, 140, 200, 0.2);
+$color-blue-opacity-tone3: rgba(71, 140, 200, 0.3);
+$color-blue-opacity-tone4: rgba(71, 140, 200, 0.4);
+
+$color-red-opacity-tone1: rgba(208, 2, 27, 0.1);
+$color-red-opacity-tone15: rgba(208, 2, 27, 0.15);
+$color-red-opacity-tone2: rgba(208, 2, 27, 0.2);
+
+$color-orange-opacity-tone1: rgba(222, 160, 10, 0.1);
+$color-orange-opacity-tone15: rgba(222, 160, 10, 0.15);
+$color-orange-opacity-tone2: rgba(222, 160, 10, 0.2);
+
+$color-bluegray-opacity-tone2: rgba(89, 110, 129, 0.2);
+
+$color-botticelli: #c6d7e6;
+
+// background-color в moreBtn задается с прозрачностью
+$bg-morebtn: rgba(184, 184, 184, 0.3);
+$bg-morebtn-hover: rgba(184, 184, 184, 0.5);
+
+$font-family: Lato, sans-serif;
+$font-verdana:  Verdana, 'Dejavu Sans', Geneva, Tahoma, sans-serif;
+
+/// Путь до картинок и шрифтов, может быть переопределен
+/// No trailing slash here
+$image-base-path: '../img' !default;
+$font-base-path: '../fonts' !default;
+
+// новая переменная чтобы названия переменных совпадали с названиями переменных в зеплине
+$orange-text: #c86a00;
+
+$default-header-z-index: 9999;
+$border-alto: #d2d2d2;
+$fill-alto: #d6d6d6;

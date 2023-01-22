@@ -1,0 +1,232 @@
+@import 'variables';
+@import 'mixins';
+
+.model-table {
+  @include sandbox-markdown;
+  font-size: 12px;
+  line-height: 16px;
+
+  .flexer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .item-asterisk {
+    color: $red;
+  }
+
+  .open-brace {
+    cursor: pointer;
+    margin-left: 4px;
+    padding: 1px 8px 3px 2px;
+    display: inline-block;
+    border-radius: 2px;
+    position: relative;
+    left: -3px;
+    top: 0;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    border: 1px solid transparent;
+
+    &:hover {
+      color: $primary;
+      border-color: darken($bg, 10);
+      background: darken($bg, 2);
+    }
+  }
+
+  .brace-arrow {
+    display: inline-block;
+    height: 15px;
+    vertical-align: middle;
+    transform: rotate(90deg);
+  }
+
+  .collapsed-close-brace {
+    display: none;
+  }
+
+  .object-block {
+    display: block;
+
+    &.collapsed {
+      & > .object-body {
+        display: none;
+      }
+
+      & > .flexer .collapsed-close-brace {
+        display: inline-block;
+      }
+    }
+
+    .brace-arrow {
+      transform: rotate(0);
+    }
+  }
+
+  .item-key-bar {
+    width: 220px;
+    flex-shrink: 0;
+    padding-top: 10px;
+  }
+
+  .item-description {
+    flex-grow: 1;
+    min-height: 37px;
+    border-bottom: 1px solid $middle-gray;
+    padding: 0 8px;
+    color: $darkgray;
+    line-height: 18px;
+    margin-left: 10px;
+    word-break: keep-all;
+    display: flex;
+    gap: 8px;
+
+    .item-description-content {
+      width: 100%;
+    }
+
+    .item-description-tags {
+      width: auto;
+      flex-shrink: 0;
+      padding: 12px 0;
+      display: flex;
+      gap: 8px;
+    }
+
+    .item-description-tag {
+      display: inline-block;
+      padding: 4px 8px;
+      border: 1px solid $middle-gray;
+    }
+
+
+    blockquote {
+      all: unset;
+      display: block;
+      padding-left: 18px;
+      border-left: 2px solid $middle-gray;
+      margin-bottom: 6px;
+
+      p {
+        color: $gray;
+      }
+    }
+
+    li > p:first-child {
+      padding-top: 0;
+    }
+  }
+
+  .object-block > .flexer > .item-description {
+    border-bottom: 0;
+  }
+
+  .object-block.collapsed > .flexer > .item-description {
+    border-bottom: 1px solid $middle-gray;
+  }
+
+  .object-item {
+    padding: 0 0 1px 20px;
+    display: block;
+    position: relative;
+
+    &:before {
+      width: 0;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      display: block;
+      border-left: 1px solid $silver;
+      content: '';
+    }
+
+    &:after {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 17px;
+      width: 18px;
+      height: 0;
+      border-top: 1px solid $silver;
+      content: '';
+    }
+
+    &:first-child:before {
+      top: 18px;
+    }
+
+    &:last-child:before {
+      bottom: auto;
+      height: 18px;
+    }
+
+    &:only-child:before {
+      display: none;
+    }
+  }
+
+  .object-item:last-child > .object-block > .flexer > .item-description,
+  .object-item:last-child > .flexer > .item-description {
+    border-bottom: 0;
+  }
+
+  .inside-brace {
+    padding: 10px 20px 10px 20px;
+    margin: 0 0 8px 0;
+    border-left: 0;
+    position: relative;
+
+    &-odd {
+      background: $bg;
+    }
+
+    &-even {
+      background: $white;
+
+      & > .object-item > .object-block > .flexer .open-brace {
+        &:hover {
+          border-color: darken($white, 6);
+          background: darken($white, 2);
+        }
+      }
+    }
+  }
+
+  .discriminator-blocks {
+    .discriminator-block {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      & > .object-item:first-child:before {
+        top: 0;
+      }
+
+      & > .object-item:only-child:before {
+        display: block;
+      }
+    }
+  }
+
+  .discriminator-select {
+    padding: 10px 0;
+  }
+
+  .xxx-of-label {
+    padding-top: 10px;
+  }
+
+  .enum-array,
+  .pad-top-10 {
+    padding-top: 10px;
+  }
+
+  .object-key {
+    word-break: break-all;
+  }
+}

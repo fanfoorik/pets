@@ -1,0 +1,20 @@
+{{ $url := .ctx.RelPermalink }}
+{{ $link := .link }}
+{{ $baseUrl := .baseUrl }}
+
+{{ if eq $link.URL $url }}
+  <span class="menu-section__link active">
+      {{ $link.Name }}
+  </span>
+{{ else }}
+  <a
+    {{ if .ctx.Site.IsServer }}
+      href="{{ $link.URL | absURL }}"
+    {{ else }}
+      {{ print "//" $baseUrl "/developers" $link.URL | printf "href=%q" | safeHTMLAttr }}
+    {{ end }}
+    class="menu-section__link" data-name="menu-link"
+  >
+    {{ $link.Name }}
+  </a>
+{{ end }}

@@ -1,0 +1,14 @@
+{
+  "languageCode": "en-us",
+  "title": "pets",
+  "relativeURLs": true,
+  "pygmentsUseClasses": true,
+  "menu": {
+    "main": []
+  },
+  "security": {
+    "funcs": {
+      "getenv": ["BASE_URL"]
+    }
+  }
+}

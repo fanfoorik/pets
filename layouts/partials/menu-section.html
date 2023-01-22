@@ -1,0 +1,33 @@
+{{ $page := .page }}
+{{ $menuItemUrl := .ctx.URL | relLangURL }}
+{{ $pageUrl := .page.RelPermalink | relLangURL }}
+{{ $active := (eq $menuItemUrl $pageUrl) }}
+{{ $style := default "group" .ctx.Params.style }}
+{{ $collapsed := default true .ctx.Params.collapsed }}
+{{ $trigger := default false .ctx.Params.trigger }}
+
+{{ if .ctx.HasChildren }}
+  {{ $hasActive := trim (partial "child-deepth" (dict "ctx" .ctx "page" $page)) "\n " }}
+  {{ $isActive := or $active $hasActive }}
+
+  <theme-menu-section class="menu-section">
+    <div class="menu-trigger menu-trigger-{{ $style }} {{ if $trigger }}trigger-link{{ end }}">
+      {{ if or $active $trigger }}
+        <span class="menu-trigger-item{{ if $active }} active{{ end }}">{{ .ctx.Name }}</span>
+      {{ else }}
+        <a class="menu-trigger-item" href="{{ .ctx.URL }}">{{ .ctx.Name }}</a>
+      {{ end }}
+      <span class="menu-trigger-caret {{ if $isActive }}menu-trigger-caret-active{{ end }}"></span>
+    </div>
+
+    <div class="menu-content {{ if $isActive }}active{{ end }}">
+      {{ range .ctx.Children }}
+        {{ partial "menu-section" (dict "ctx" . "page" $page ) }}
+      {{ end }}
+    </div>
+  </theme-menu-section>
+{{ else }}
+  <div class="menu-item">
+    {{ partial "menu-item" (dict "ctx" .ctx "active" $active) }}
+  </div>
+{{ end }}

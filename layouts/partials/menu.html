@@ -1,0 +1,7 @@
+<nav class="menu">
+  {{ $page := . }}
+
+  {{ range .Site.Menus.main }}
+    {{ partial "menu-section" (dict "ctx" . "page" $page ) }}
+  {{ end }}
+</nav>

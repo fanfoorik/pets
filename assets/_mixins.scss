@@ -1,0 +1,37 @@
+@mixin sandbox-markdown {
+  ul {
+    margin-left: 12px;
+
+    li {
+      line-height: 14px;
+
+      &::before {
+        width: 6px;
+        height: 6px;
+        left: -12px;
+        top: 8px;
+      }
+    }
+  }
+
+  p {
+    padding: 10px 0 10px 0;
+    color: $darkgray;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  code {
+    background: $middle-gray;
+    border: 1px solid darken($middle-gray, 4);
+    padding: 3px;
+  }
+
+  pre {
+    white-space: normal;
+  }
+
+  a {
+    font-size: 12px;
+  }
+}

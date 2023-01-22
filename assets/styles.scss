@@ -1,0 +1,25 @@
+@import "variables";
+@import "reset";
+@import "header";
+
+#page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#content {
+  display: flex;
+  flex-grow: 1;
+}
+
+#aside {
+  width: 200px;
+  flex-shrink: 0;
+  border-right: 1px solid #cccccc;
+  padding: 20px;
+}
+
+#main {
+  padding: 20px;
+}

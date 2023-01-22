@@ -1,0 +1,17 @@
+{
+  "name": "pets",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "hugo version && cross-env BASE_URL=ati.st hugo server -b http://localhost",
+    "build": "hugo version && hugo"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

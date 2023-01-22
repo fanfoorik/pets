@@ -11,18 +11,6 @@
 #
 image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
-# Set this if you intend to use Git submodules
-variables:
-  GIT_SUBMODULE_STRATEGY: recursive
-  HUGO_ENV: production
-
-default:
-  before_script:
-    - apk add --update --no-cache git go
-    - git submodule update --init --recursive
-    - hugo mod init gitlab.com/pages/hugo
-    - hugo mod get -u github.com/theNewDynamic/gohugo-theme-ananke
-
 test:
   script:
     - hugo

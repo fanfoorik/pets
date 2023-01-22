@@ -1,0 +1,5 @@
+{{ if .active }}
+  <span class="menu-link">{{ .ctx.Name }}</span>
+{{ else }}
+  <a class="menu-link" href="{{ .ctx.URL }}">{{ .ctx.Name }}</a>
+{{ end }}
