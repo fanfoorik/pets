@@ -11,8 +11,15 @@
 #
 image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
+test:
+  script:
+    - hugo
+
 pages:
   script:
     - hugo
+  artifacts:
+    paths:
+      - public
   rules:
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
