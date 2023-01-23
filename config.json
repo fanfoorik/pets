@@ -1,6 +1,5 @@
 {
   "title": "pets",
-  "baseURL": "/pets/",
   "relativeURLs": true,
   "pygmentsUseClasses": true,
   "menu": {
