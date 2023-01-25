@@ -1,6 +1,6 @@
 {
   "title": "pets",
-  "publishDir": "root",
+  "publishDir": "docs",
   "relativeURLs": true,
   "pygmentsUseClasses": true,
   "menu": {
