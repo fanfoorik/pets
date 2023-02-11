@@ -7,4 +7,4 @@ type: page
 menu: main
 ---
 
-Contact page
+Contact pageContact pageContact pageContact pageContact pageContact page
