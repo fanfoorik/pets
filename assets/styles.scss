@@ -17,8 +17,17 @@
   width: 200px;
   flex-shrink: 0;
   padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
 }
 
 #main {
   padding: 20px;
+}
+
+.menu {
+  .menu-item {
+    margin-bottom: 12px;
+  }
 }
