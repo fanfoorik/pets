@@ -107,7 +107,6 @@ img {
 #aside {
   width: 200px;
   flex-shrink: 0;
-  border-right: 1px solid #cccccc;
   padding: 20px; }
 
 #main {
