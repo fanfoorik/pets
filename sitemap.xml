@@ -43,5 +43,7 @@
     <loc>/pages/</loc>
   </url><url>
     <loc>/pages/second-page/</loc>
+  </url><url>
+    <loc>/pages/third-page/</loc>
   </url>
 </urlset>
