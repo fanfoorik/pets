@@ -80,14 +80,5 @@ The sixth of January, 1482, is not, however, a day of which history has preserve
       <description>This is contact page</description>
     </item>
     
-    <item>
-      <title>Вишневый цвет</title>
-      <link>/vishnevii-cvet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/vishnevii-cvet/</guid>
-      <description>Светочка вишневый цвет!</description>
-    </item>
-    
   </channel>
 </rss>
