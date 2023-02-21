@@ -7,11 +7,4 @@ type: page
 menu: main
 ---
 
-Contact pageContact pageContact pageContact pageContact pageContact page
-sd
-fs
-df
-sdf
-sd
-fsd
-f
+This is contact page
