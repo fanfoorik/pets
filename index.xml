@@ -89,5 +89,15 @@ The sixth of January, 1482, is not, however, a day of which history has preserve
       <description>Описание первой страницы!</description>
     </item>
     
+    <item>
+      <title>second-page</title>
+      <link>/pages/second-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pages/second-page/</guid>
+      <description>Описание второй страницы.
+Сюда можно уже пихать контент-контент!</description>
+    </item>
+    
   </channel>
 </rss>
