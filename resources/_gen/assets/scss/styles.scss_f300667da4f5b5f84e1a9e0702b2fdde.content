@@ -93,7 +93,8 @@ img {
   width: 100%;
   justify-content: space-between;
   z-index: 300;
-  background: #fff; }
+  background: #fff;
+  flex-shrink: 0; }
 
 #page {
   display: flex;
