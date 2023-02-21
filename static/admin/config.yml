@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: fanfoorik/pets # Path to your Github repository
+  branch: master # Branch to update
+#  site_domain: netlify-cms
+
+media_folder: "src/site/static/images/uploads" # Media files will be stored here
+public_folder: "/images/uploads" # The src attribute for uploaded media
+
+collections:
+  - name: "pages"
+    label: "Страницы"
+    label_singular: "Страница"
+    description: "Добавление страницы"
+    folder: "content/pages/"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+
+    fields:
+      - {label: "Страница", name: "title", widget: "string" }
+      - {label: "Описание", name: "body", widget: "markdown", required: false }
+      - { label: "Menu", name: "menu", widget: "hidden", default: "main" }
