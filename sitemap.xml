@@ -37,5 +37,9 @@
     <loc>/categories/</loc>
   </url><url>
     <loc>/contact/</loc>
+  </url><url>
+    <loc>/pages/first-page/</loc>
+  </url><url>
+    <loc>/pages/</loc>
   </url>
 </urlset>
