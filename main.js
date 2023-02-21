@@ -1,0 +1,4 @@
+(() => {
+  // <stdin>
+  console.log("hello!");
+})();
