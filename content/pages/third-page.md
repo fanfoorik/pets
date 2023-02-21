@@ -4,10 +4,6 @@ menu: main
 ---
 # Упражнение "Растяни предложение"
 
-13.02.2023
-
-2Комментировать
-
 [![](https://webpulse.imgsmail.ru/imgpreview?mb=webpulse&key=pulse_cabinet-image-8154c22f-d0ba-460d-a32a-158dcc240d20)](https://webpulse.imgsmail.ru/imgpreview?mb=webpulse&key=pulse_cabinet-image-8154c22f-d0ba-460d-a32a-158dcc240d20)
 
 Чтобы свободно владеть другим языком, вам нужно знать достаточное количество слов и фраз, а также уметь соединять их в предложения, не запинаясь слишком сильно или слишком часто.
